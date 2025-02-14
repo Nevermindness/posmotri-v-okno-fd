@@ -23,13 +23,15 @@ html {
   flex-direction: column;
   inline-size: 1200px;
   block-size: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  width: 1200px;
-  height: 800px;
+
 }
 
 h1,
@@ -65,16 +67,15 @@ ol {
 }
 
 .content {
-  padding: 133px 30px;
-  justify-content: center;
-  align-items: end;
   display: grid;
+  justify-content: center;
   gap: 17px;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
   'result details';
   width: 1140px;
   height: 534px;
+
 }
 
 .content__accent {
@@ -85,6 +86,8 @@ ol {
   grid-area: result;
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  align-items: end;
 }
 
 .result__video {
@@ -99,7 +102,8 @@ ol {
   height: 387px;
   position: relative;
   margin-bottom: 5px;
-  transform: translateX(-4px);
+  transform: translateX(-5px);
+
 }
 
 .title {
@@ -111,8 +115,8 @@ ol {
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 17px;
-  padding-left: 9px;
+  margin-bottom: 20px;
+  padding-left: 8px;
 }
 
 .search-form {
@@ -121,7 +125,8 @@ ol {
   justify-content: space-between;
   align-items: start;
   gap: 40px;
-  transform: translate(-3.5px, 2px);
+  padding: 3px;
+  transform: translateX(-2px);
 }
 
 .search-form__fieldset {
@@ -185,7 +190,7 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 22px;
   letter-spacing: 0;
   text-align: left;
   border: none;
@@ -194,11 +199,10 @@ ol {
   border-top: 1px solid rgb(255, 255, 255);
   background-color: transparent;
   color: #ffffff;
-  min-width: 225px;
+  width: 225px;
+  height: 27px;
   appearance: none;
-  outline: none;
-  padding: 2px 0;
-  transform: translateX(-1.5px);
+  padding: 5px 0;
 }
 
 .search-form__fieldset-title {
@@ -222,7 +226,7 @@ ol {
 }
 
 .content__list-container {
-  max-height: 298px;
+  height: 298px;
   flex-grow: 1;
   overflow-y: auto;
   grid-area: content__list-container;
@@ -238,7 +242,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   outline: none;
 }
 
@@ -274,8 +278,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 193px;
-  height: 103px;
+  width: 194px;
+  height: 105px;
   padding-left: 3px;
 }
 
@@ -313,7 +317,7 @@ ol {
   gap: 5px;
   width: 196px;
   padding-left: 6px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 
 .content__video-card-description {
@@ -321,6 +325,7 @@ ol {
   line-height: 15px;
   font-size: 18px;
   font-weight: 400;
+  height: 20px;
   text-align: left;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -360,13 +365,12 @@ ol {
 }
 
 .button:focus-visible {
-    outline: 1px solid #fff;
-    outline-offset: 1px;
+  outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
 .more-button {
-  margin: 27px 0 0 10px;
+  margin: 26px 0 5px 10px;
   font-size: 16px;
   width: 390px;
 }
