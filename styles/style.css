@@ -65,11 +65,11 @@ ol {
 }
 
 .content {
-  padding: 133px 0px;
+  padding: 133px 30px;
   justify-content: center;
   align-items: end;
   display: grid;
-  gap: 25px;
+  gap: 22px;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
   'result details';
@@ -95,10 +95,10 @@ ol {
 
 .result__video-container {
   grid-area: video;
-  width: 710px;
-  height: 383px;
+  width: 709px;
+  height: 387px;
   position: relative;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .title {
@@ -120,7 +120,7 @@ ol {
   justify-content: space-between;
   align-items: start;
   gap: 40px;
-  transform: translateY(-4%);
+  transform: translate(-0.5px, 2px);
 }
 
 .search-form__fieldset {
@@ -184,7 +184,7 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0;
   text-align: left;
   border: none;
@@ -197,6 +197,7 @@ ol {
   appearance: none;
   outline: none;
   padding: 2px 0;
+  transform: translateX(-1.5px);
 }
 
 .search-form__fieldset-title {
@@ -207,6 +208,7 @@ ol {
   letter-spacing: 0%;
   text-align: left;
   margin: 6px 0;
+  transform: translate(-2px, 2px);
 }
 
 .content__details {
@@ -219,7 +221,7 @@ ol {
 }
 
 .content__list-container {
-  max-height: 305px;
+  max-height: 298px;
   flex-grow: 1;
   overflow-y: auto;
   grid-area: content__list-container;
@@ -315,7 +317,7 @@ ol {
 }
 
 .button {
-  font-size: 15.6px;
+  font-size: 16.3px;
   font-weight: 700;
   border: 1px solid #fff;
   line-height: 22px;
@@ -330,7 +332,7 @@ ol {
 
 .search-form__submit-button {
   align-items: center;
-  margin-top: 27px;
+  margin-top: 26px;
   width: 194px;
 }
 
@@ -350,5 +352,6 @@ ol {
 
 .more-button {
   margin: 27px 0 5px 9px;
+  padding-left: 6px;
   width: 390px;
 }
