@@ -69,7 +69,7 @@ ol {
   justify-content: center;
   align-items: end;
   display: grid;
-  gap: 22px;
+  gap: 17px;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
   'result details';
@@ -95,10 +95,11 @@ ol {
 
 .result__video-container {
   grid-area: video;
-  width: 709px;
+  width: 710px;
   height: 387px;
   position: relative;
   margin-bottom: 5px;
+  transform: translateX(-4px);
 }
 
 .title {
@@ -111,7 +112,7 @@ ol {
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 17px;
-  margin-left: 6px;
+  padding-left: 9px;
 }
 
 .search-form {
@@ -120,7 +121,7 @@ ol {
   justify-content: space-between;
   align-items: start;
   gap: 40px;
-  transform: translate(-0.5px, 2px);
+  transform: translate(-3.5px, 2px);
 }
 
 .search-form__fieldset {
@@ -226,17 +227,25 @@ ol {
   overflow-y: auto;
   grid-area: content__list-container;
   position: relative;
+  outline: none;
+}
+
+.content__list-container:focus-visible {
+  outline: 1px solid #fff;
+  border-radius: 0;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  outline: none;
 }
 
 .content__list-item {
   display: block;
-  padding: 0px 3px;
+  padding: 0 3px;
+  outline: none;
 }
 
 .content__card-link_current:active {
@@ -250,6 +259,7 @@ ol {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 3px;
+  width: 399px;
 }
 
 .content__video-card:hover {
@@ -264,8 +274,9 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 193px;
   height: 103px;
+  padding-left: 3px;
 }
 
 .content__video-card-thumbnail img {
@@ -278,6 +289,7 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  outline: none;
 }
 
 .content__video-card-title {
@@ -300,7 +312,8 @@ ol {
   flex-direction: column;
   gap: 5px;
   width: 196px;
-  padding: 2px;
+  padding-left: 6px;
+  padding-top: 2px;
 }
 
 .content__video-card-description {
@@ -328,6 +341,7 @@ ol {
   padding: 0;
   width: 100%;
   height: 34px;
+  outline: none;
 }
 
 .search-form__submit-button {
@@ -345,13 +359,14 @@ ol {
   color: #fff;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
     outline: 1px solid #fff;
     outline-offset: 1px;
+  outline-offset: 1px;
 }
 
 .more-button {
-  margin: 27px 0 5px 9px;
-  padding-left: 6px;
+  margin: 27px 0 0 10px;
+  font-size: 16px;
   width: 390px;
 }
